@@ -80,7 +80,6 @@
         obsidian
         google-chrome
         windsurf
-        code-cursor
         apktool
       ];
 
@@ -96,6 +95,7 @@
         casks = [
           "iina"
           "orbstack"
+          "cursor"
         ];
         taps = [
           "homebrew/cask"

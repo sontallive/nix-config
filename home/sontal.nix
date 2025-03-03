@@ -25,6 +25,14 @@
     # ...
   ];
 
+  # direnv
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv.enable = true;
+  };
+
+
   # 配置程序
   programs.zsh = {
     enable = true;
