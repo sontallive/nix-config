@@ -46,6 +46,13 @@
         vscode
         bun
 
+        # rust
+        cargo
+        rustc
+        rust-analyzer
+        rustfmt
+        clippy
+
         # 终端工具
         fish
         tmux
