@@ -7,13 +7,27 @@
       url = "github:LnL7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    # Optional: Declarative tap management
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
+    homebrew-bundle = {
+      url = "github:homebrew/homebrew-bundle";
+      flake = false;
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, ... }:
   let
     configuration = { pkgs, config, ... }: {
       # 基础系统配置
@@ -53,6 +67,22 @@
         code-cursor
         apktool
       ];
+
+      homebrew = {
+        enable = true;
+        brews = [
+          "mas"
+          "tcl-tk"
+          "openssl"
+          "gdbm"
+
+        ];
+        casks = [
+          "iina"
+          "orbstack"
+        ];
+        # onActivation.cleanup = "zap";
+      };
 
       # Add these programs to the system PATH
       environment.pathsToLink = [ "/bin" "/share/man" ];
@@ -110,6 +140,21 @@
       system = "aarch64-darwin";
       modules = [ 
         configuration
+        nix-homebrew.darwinModules.nix-homebrew 
+        {
+          nix-homebrew = {
+            enable = true;
+            enableRosetta = true;
+            user = "sontal";
+           # Optional: Declarative tap management
+            taps = {
+              "homebrew/homebrew-core" = homebrew-core;
+              "homebrew/homebrew-cask" = homebrew-cask;
+              "homebrew/homebrew-bundle" = homebrew-bundle;
+            };
+            # autoMigrate = true;
+          };
+        }
         home-manager.darwinModules.home-manager
         {
           home-manager = {
@@ -126,6 +171,21 @@
       system = "aarch64-darwin";
       modules = [ 
         configuration
+        nix-homebrew.darwinModules.nix-homebrew 
+        {
+          nix-homebrew = {
+            enable = true;
+            enableRosetta = true;
+            user = "sontal";
+           # Optional: Declarative tap management
+            taps = {
+              "homebrew/homebrew-core" = homebrew-core;
+              "homebrew/homebrew-cask" = homebrew-cask;
+              "homebrew/homebrew-bundle" = homebrew-bundle;
+            };
+            # autoMigrate = true;
+          };
+        }
         home-manager.darwinModules.home-manager
         {
           home-manager = {
