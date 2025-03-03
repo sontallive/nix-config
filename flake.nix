@@ -97,6 +97,13 @@
           "iina"
           "orbstack"
         ];
+        taps = [
+          "homebrew/cask"
+        ];
+        onActivation = {
+          cleanup = "zap";
+          upgrade = true;
+        };
       };
       
       fonts.packages = with pkgs; [
