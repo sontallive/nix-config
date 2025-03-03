@@ -31,11 +31,12 @@
         # 开发工具
         neovim
         vscode
-        # cursor
-	bun
+	      bun
+        
 
         # 终端工具
         alacritty
+        fish
         tmux
         mkalias
         ripgrep
@@ -106,6 +107,22 @@
   in
   {
     darwinConfigurations."Macbook-Pro" = nix-darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [ 
+        configuration
+        home-manager.darwinModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.sontal = import ./home/sontal.nix;
+            # Add this to ensure Home Manager activates properly
+            extraSpecialArgs = { inherit inputs; };
+          };
+        }
+      ];
+    };
+    darwinConfigurations."MacMini" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [ 
         configuration
