@@ -1,0 +1,62 @@
+[terminal.shell]
+args = ['--login']
+program = "/opt/homebrew/bin/fish"
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+# Optional: You can also specify different fonts for bold/italic if needed
+# [font.bold]
+# family = "JetBrainsMono Nerd Font"
+# style = "Bold"
+
+# [font.italic]
+# family = "JetBrainsMono Nerd Font"
+# style = "Italic"
+
+# Optional: Add font offset for better vertical spacing
+# [font.offset]
+# x = 0
+# y = 1
+
+# Optional: Adjust line spacing
+# [font.glyph_offset]
+# x = 0
+# y = 0
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 1.0
+
+[window.padding]
+x = 6
+y = 0
+
+#[window.dimensions]
+#columns = 90
+#lines = 25
+
+[colors.normal]
+black = "#21222c"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#f8f8f2"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
