@@ -59,6 +59,7 @@
         tmux
         ripgrep
         eza
+        helix
 
         # 字体
         nerd-fonts.roboto-mono
@@ -97,6 +98,7 @@
           "iina"
           "orbstack"
           "cursor"
+          "godot"
         ];
         taps = [
           "homebrew/cask"
