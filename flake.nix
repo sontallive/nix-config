@@ -45,6 +45,7 @@
         neovim
         vscode
         bun
+        python311
 
         # rust
         cargo
@@ -159,6 +160,7 @@
           "homebrew/homebrew-cask" = homebrew-cask;
           "homebrew/homebrew-bundle" = homebrew-bundle;
         };
+        autoMigrate = true;
       };
     };
 
