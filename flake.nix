@@ -41,6 +41,9 @@
 
       # 通用系统包
       environment.systemPackages = with pkgs; [
+        # 代理
+        # clash-verge-rev # currently not supported on darwin
+
         # 开发工具
         neovim
         vscode
@@ -60,6 +63,9 @@
         ripgrep
         eza
         helix
+
+        # 软件包
+        discord
 
         # 字体
         nerd-fonts.roboto-mono
