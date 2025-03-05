@@ -106,6 +106,9 @@
           "cursor"
           "godot"
         ];
+        masApps = {
+          "富途牛牛" = 664513913;
+        };
         taps = [
           "homebrew/cask"
         ];
