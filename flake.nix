@@ -49,6 +49,13 @@
         vscode
         bun
         python311
+        alacritty
+        windsurf
+
+
+        # 浏览器
+        google-chrome
+        firefox
 
         # rust
         cargo
@@ -67,6 +74,7 @@
         # 软件包
         discord
 
+
         # 字体
         nerd-fonts.roboto-mono
         nerd-fonts.jetbrains-mono
@@ -83,11 +91,8 @@
 
       # macOS 特定包
       environment.systemPackages = with pkgs; [
-        alacritty
         mkalias
         obsidian
-        google-chrome
-        windsurf
         apktool
       ];
 
@@ -101,10 +106,12 @@
           "gdbm"
         ];
         casks = [
-          "iina"
+          "iina" # this player is only available on darwin
           "orbstack"
+          # the pkgs version of cursor has some command issues, so use the brew version, 
+          # the linux version should be installed via pkgs, but not on darwin
           "cursor"
-          "godot"
+          "godot" # the linux version should be installed via pkgs, but not on darwin
         ];
         masApps = {
           "富途牛牛" = 664513913;
