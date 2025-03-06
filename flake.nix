@@ -43,16 +43,11 @@
       environment.systemPackages = with pkgs; [
         # 开发工具
         neovim
-        vscode
         bun
         python311
 
         # rust
-        cargo
-        rustc
-        rust-analyzer
-        rustfmt
-        clippy
+        rustup
 
         # 终端工具
         fish
@@ -99,6 +94,7 @@
           "orbstack"
           "cursor"
           "godot"
+          "visual-studio-code"
         ];
         taps = [
           "homebrew/cask"
