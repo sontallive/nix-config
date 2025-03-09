@@ -83,6 +83,7 @@
       
       # Also include user profile for other Nix packages
       set -gx PATH $HOME/.nix-profile/bin $PATH
+      set -gx PATH $HOME/.cargo/bin $PATH
     '';
     
     # Fish functions if needed
