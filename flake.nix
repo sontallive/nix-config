@@ -51,6 +51,7 @@
         python311
         alacritty
         windsurf
+        uv
 
 
         # 浏览器
