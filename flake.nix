@@ -56,6 +56,8 @@
         uv
         mitmproxy
         fd
+        direnv
+
 
         # 浏览器
         google-chrome
