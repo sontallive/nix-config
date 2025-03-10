@@ -41,7 +41,11 @@
 
       # 通用系统包
       environment.systemPackages = with pkgs; [
+        # 代理
+        # clash-verge-rev # currently not supported on darwin
+
         # 开发工具
+        git
         neovim
         bun
         python311
@@ -49,6 +53,7 @@
         windsurf
         awscli
         dbeaver-bin
+        uv
 
         # 浏览器
         google-chrome
@@ -65,8 +70,9 @@
         helix
 
         # 软件包
-        
-        
+        # discord
+
+
         # 字体
         nerd-fonts.roboto-mono
         nerd-fonts.jetbrains-mono
@@ -83,11 +89,8 @@
 
       # macOS 特定包
       environment.systemPackages = with pkgs; [
-        alacritty
         mkalias
         obsidian
-        google-chrome
-        windsurf
         apktool
       ];
 
@@ -101,13 +104,18 @@
           "gdbm"
         ];
         casks = [
-          "iina"
+          "iina" # this player is only available on darwin
           "orbstack"
+          # the pkgs version of cursor has some command issues, so use the brew version, 
+          # the linux version should be installed via pkgs, but not on darwin
           "cursor"
           "godot" # the linux version should be installed via pkgs, but not on darwin
           "visual-studio-code"
           "discord"
         ];
+        masApps = {
+          "富途牛牛" = 664513913;
+        };
         taps = [
           "homebrew/cask"
         ];
