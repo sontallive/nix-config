@@ -45,6 +45,14 @@
         neovim
         bun
         python311
+        alacritty
+        windsurf
+        awscli
+        dbeaver-bin
+
+        # 浏览器
+        google-chrome
+        firefox
 
         # rust
         rustup
@@ -56,6 +64,9 @@
         eza
         helix
 
+        # 软件包
+        
+        
         # 字体
         nerd-fonts.roboto-mono
         nerd-fonts.jetbrains-mono
@@ -93,8 +104,14 @@
           "iina"
           "orbstack"
           "cursor"
+<<<<<<< Updated upstream
           "godot"
           "visual-studio-code"
+=======
+          "godot" # the linux version should be installed via pkgs, but not on darwin
+          "visual-studio-code"
+          "discord"
+>>>>>>> Stashed changes
         ];
         taps = [
           "homebrew/cask"
