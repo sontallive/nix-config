@@ -104,14 +104,9 @@
           "iina"
           "orbstack"
           "cursor"
-<<<<<<< Updated upstream
-          "godot"
-          "visual-studio-code"
-=======
           "godot" # the linux version should be installed via pkgs, but not on darwin
           "visual-studio-code"
           "discord"
->>>>>>> Stashed changes
         ];
         taps = [
           "homebrew/cask"
