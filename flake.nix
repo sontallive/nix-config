@@ -64,6 +64,11 @@
         firefox
 
         # rust
+        cargo
+        rustc
+        rust-analyzer
+        rustfmt
+        clippy
         rustup
 
         # 终端工具
