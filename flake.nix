@@ -55,6 +55,7 @@
         dbeaver-bin
         uv
         mitmproxy
+        fd
 
         # 浏览器
         google-chrome
@@ -72,7 +73,6 @@
 
         # 软件包
         # discord
-
 
         # 字体
         nerd-fonts.roboto-mono
@@ -113,6 +113,7 @@
           "godot" # the linux version should be installed via pkgs, but not on darwin
           "visual-studio-code"
           "discord"
+          "font-maple-mono-nf-cn"
         ];
         masApps = {
           "富途牛牛" = 664513913;

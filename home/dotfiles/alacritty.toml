@@ -9,7 +9,8 @@ style = "Beam"
 size = 14.0
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+# family = "JetBrainsMono Nerd Font"
+family = "Maple Mono NF CN"
 
 # Optional: You can also specify different fonts for bold/italic if needed
 # [font.bold]
