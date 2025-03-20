@@ -54,6 +54,7 @@
         awscli
         dbeaver-bin
         uv
+        mitmproxy
 
         # 浏览器
         google-chrome
