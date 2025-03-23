@@ -57,6 +57,7 @@
         mitmproxy
         fd
         direnv
+        nodejs
 
 
         # 浏览器
