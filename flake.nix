@@ -115,13 +115,14 @@
         casks = [
           "iina" # this player is only available on darwin
           "orbstack"
-          # the pkgs version of cursor has some command issues, so use the brew version, 
+          # the pkgs version of cursor has some command issues, so use the brew version,
           # the linux version should be installed via pkgs, but not on darwin
           "cursor"
           "godot" # the linux version should be installed via pkgs, but not on darwin
           "visual-studio-code"
           "discord"
           "font-maple-mono-nf-cn"
+          "cmake"
         ];
         masApps = {
           "富途牛牛" = 664513913;
@@ -134,7 +135,7 @@
           upgrade = true;
         };
       };
-      
+
       fonts.packages = with pkgs; [
         nerd-fonts.roboto-mono
         nerd-fonts.jetbrains-mono
@@ -147,6 +148,7 @@
           persistent-apps = [
             "${pkgs.alacritty}/Applications/Alacritty.app"
             "${pkgs.obsidian}/Applications/Obsidian.app"
+            "/Applications/Zed Preview.app"
             "${pkgs.code-cursor}/Applications/Cursor.app"
             "${pkgs.google-chrome}/Applications/Google Chrome.app"
             "/System/Applications/Mail.app"
@@ -205,10 +207,10 @@
     # 创建 Darwin 系统配置
     mkDarwinSystem = { system }: nix-darwin.lib.darwinSystem {
       inherit system;
-      modules = [ 
+      modules = [
         sharedConfiguration
         darwinConfiguration
-        nix-homebrew.darwinModules.nix-homebrew 
+        nix-homebrew.darwinModules.nix-homebrew
         homebrewModule
         home-manager.darwinModules.home-manager
         homeManagerModule
