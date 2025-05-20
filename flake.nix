@@ -78,6 +78,7 @@
         ripgrep
         eza
         helix
+        typst
 
         # 软件包
         # discord
@@ -123,6 +124,7 @@
           "discord"
           "font-maple-mono-nf-cn"
           "cmake"
+          "blender"
         ];
         masApps = {
           "富途牛牛" = 664513913;
