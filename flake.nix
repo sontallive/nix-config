@@ -124,6 +124,7 @@
           "discord"
           "font-maple-mono-nf-cn"
           "cmake"
+          "github-copilot-for-xcode"
         ];
         masApps = {
           "富途牛牛" = 664513913;
