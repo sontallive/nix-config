@@ -83,6 +83,7 @@
 
         # 软件包
         # discord
+        godot
 
         # 字体
         nerd-fonts.roboto-mono
