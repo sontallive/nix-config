@@ -83,7 +83,6 @@
 
         # 软件包
         # discord
-        godot
 
         # 字体
         nerd-fonts.roboto-mono
@@ -126,7 +125,7 @@
           "discord"
           "font-maple-mono-nf-cn"
           "cmake"
-          "github-copilot-for-xcode"
+          "godot"
         ];
         masApps = {
           "富途牛牛" = 664513913;
