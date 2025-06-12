@@ -46,6 +46,7 @@
       ls = "eza";
       ll = "eza -l";
       la = "eza -la";
+      claude = "~/.bun/bin/claude";
     };
   };
 

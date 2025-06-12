@@ -79,6 +79,7 @@
         eza
         helix
         typst
+        zoxide
 
         # 软件包
         # discord
