@@ -126,6 +126,7 @@
           "font-maple-mono-nf-cn"
           "cmake"
           "godot"
+          "tiled"
         ];
         masApps = {
           "富途牛牛" = 664513913;
