@@ -67,7 +67,6 @@
         # rust
         cargo
         rustc
-        rust-analyzer
         rustfmt
         clippy
         rustup
@@ -113,6 +112,7 @@
           "tcl-tk"
           "openssl"
           "gdbm"
+          "rust-analyzer"
         ];
         casks = [
           "iina" # this player is only available on darwin

@@ -47,6 +47,7 @@
       ll = "eza -l";
       la = "eza -la";
       claude = "~/.bun/bin/claude";
+      z = "zoxide";
     };
   };
 
@@ -62,9 +63,11 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      ls = "eza";
-      ll = "eza -l";
-      la = "eza -la";
+        ls = "eza";
+        ll = "eza -l";
+        la = "eza -la";
+        claude = "~/.bun/bin/claude";
+        z = "zoxide";
     };
   };
 
@@ -72,9 +75,11 @@
   programs.fish = {
     enable = true;
     shellAliases = {
-      ls = "eza";
-      ll = "eza -l";
-      la = "eza -la";
+        ls = "eza";
+        ll = "eza -l";
+        la = "eza -la";
+        claude = "~/.bun/bin/claude";
+        z = "zoxide";
     };
 
     # Make sure Fish can find system-installed Nix packages
