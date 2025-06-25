@@ -49,6 +49,9 @@
       claude = "~/.bun/bin/claude";
       z = "zoxide";
     };
+    initExtra = ''
+      export PATH="$HOME/.cargo/bin:$PATH"
+    '';
   };
 
   # Git 配置
