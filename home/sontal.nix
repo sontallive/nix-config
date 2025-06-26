@@ -46,11 +46,11 @@
       ls = "eza";
       ll = "eza -l";
       la = "eza -la";
-      claude = "~/.bun/bin/claude";
       z = "zoxide";
     };
     initExtra = ''
       export PATH="$HOME/.cargo/bin:$PATH"
+      export PATH="$HOME/.bun/bin:$PATH"
     '';
   };
 
